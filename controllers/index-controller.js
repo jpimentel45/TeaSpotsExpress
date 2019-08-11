@@ -7,7 +7,7 @@ const app = express();
 //mongo setup
 var db
 MongoClient.connect('mongodb+srv://jpimentel45:nauj1994@dailyspecial-ndwdj.gcp.mongodb.net/test?retryWrites=true&w=majority', (err, database) => {
-  // ... start the server
+  // ... start the server  
   if (err) return console.log(err)
   db = database.db('dailySpecial') // whatever your database name is
   app.listen(3001, () => {
